@@ -4,15 +4,507 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note</title>
+    <title>Home</title>
+    <!-- Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Library DaisyUl -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        
-    </header>
-    <main>
+    <header >
+        <nav>
+            <div class="navbar bg-base-100">
+                <!-- Mobile Responsive -->
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="note.html">Note</a></li>
+                      <li><a href="interviewQuestion.html">Interview Question</a></li>
+                      <li tabindex="0">
+                        <a class="justify-between">
+                          Parent
+                          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                        </svg>
+                        </a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <!-- Desktop Responsive -->
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal p-0">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="note.html">Note</a></li>
+                    <li><a href="interviewQuestion.html">Interview Question</a></li>
+                    <li tabindex="0">
+                      <a>
+                        Parent
+                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                      </a>
+                      <ul class="p-2">
+                        <li><a>Submenu 1</a></li>
+                        <li><a>Submenu 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn">Get started</a>
+                </div>
+              </div>
+        </nav>
 
+        <h1 class="text-2xl text-center text-orange-400 font-bold my-6">Home</h1>
+    </header>
+    <main class="md:container mx-auto">
+        <!-- 30.0 Common DOM Related Interview Question -->
+        <section class="m-5">
+            <h2 class="text-lg font-bold mb-3">30.0 Common DOM Related Interview Question</h2>
+            <!-- Question No: 01 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    01. What is DOM
+                </div>
+                
+                <div class="collapse-content"> <hr>
+                  <p>The <strong>Document Object Model </strong> (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p> <br>
+                  <p>
+                      A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.
+
+                  </p> <br>
+
+                    <p>
+                    For example, the DOM specifies that the querySelectorAll method in this code snippet must return a list of all the elements in the document:
+
+                    </p>
+                </div>
+                
+              </div>
+            <!-- Question No: 02 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    02. What are the different ways to get an element from DOM?
+                </div>
+                <div class="collapse-content"> <hr>
+                    <ul class="list-outside ...">
+                        <li class="my-3">
+                            <p class="font-bold">Get HTML element by Id</p>
+                            <p>document.getElementById(element_ID);</p>
+                        </li>
+                        <li class="my-3">
+                            <p class="font-bold">Get HTML element by className</p>
+                            <p>document.getElementsByClassName(element_classnames);</p>
+                        </li>
+                        <li class="my-3">
+                            <p class="font-bold">Get HTML element by Name</p>
+                            <p>document.getElementsByName(element_name);</p>
+                        </li>
+                        <li class="my-3">
+                            <p class="font-bold">Get HTML element by tagName</p>
+                            <p>document.getElementsByTagName(Tag_name);</p>
+                        </li>
+                        <li class="my-3">
+                            <p class="font-bold">Get HTML element by CSS Selector</p>
+                            <p>document.querySelector(selectors);</p>
+                            <p>document.querySelectorAll(selectors);</p>
+                        </li>
+                  
+                       
+                      </ul>
+                </div>
+              </div>
+            <!-- Question No: 03 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    03. What’s the difference between an <strong>Event Handler</strong> and an <strong>Event Listener</strong> ?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 04 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    04. What does <strong>“event buddling”</strong> mean in JavaScript?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 05 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    05. Can you explain the different types of events available in JavaScript?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 06 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    06. What’s the difference between <strong>event.preventDefault()</strong> and <strong>evetn.stopPropagation()</strong> ?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            
+  
+        </section>
+        <!-- 30.0 Common ES6 Interview Question -->
+        <section class="m-5">
+            <h2 class="text-lg font-extrabold mb-3">30.0 Common ES6 Interview Question</h2>
+            <!-- Question No: 01 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    01. What is ES6? Have you ever used anything from ES6?
+                </div>
+                
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+                
+              </div>
+            <!-- Question No: 02 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    02. Explain the difference between var, let and const.
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 03 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    03. What is the arrow function and how to create it?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 04 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    04. Give an example of an Arrow function in ES6? List down its advantages.
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 05 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    05. Discuss spread operator in ES6 with an example?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 06 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    06. What do you understand about default parameters?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 07 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    07. What are template literals in ES6?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 08 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    08. Tell us the difference between arrow and regular function.
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            
+  
+        </section>
+        <!-- 31.0 Common  Interview Question -->
+        <section class="m-5">
+            <h2 class="text-lg font-extrabold mb-3">31.0 Common Interview Question</h2>
+            <!-- Question No: 01 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    01. What’s the difference between map, forEach, filter?
+                </div>
+                
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+                
+              </div>
+            <!-- Question No: 02 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    02. What’s the difference between filter and find?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 03 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    03. What’s is the difference between for/of and for/in?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 04 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    04. How do you empty an array?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 05 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    05. Difference between class and object?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 06 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    06. What is a Prototype chain? or how does inheritance work in JavaScritp?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 07 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    07. What does destructing do in ES6?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 08 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    08. Is optional chaining is same as ternary operator? 
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+            </div>
+            <!-- Question No: 09 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    09. What do you mean by dot notation and bracket notation? when should you use  dotnotation or bracket notation?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            
+  
+        </section>
+        <!-- 37.0 Common Interview Question -->
+        <section class="m-5">
+            <h2 class="text-lg font-extrabold mb-3">37.0 Common Interview Question</h2>
+            <!-- Question No: 01 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    01. How does browser runs JavaScript
+                </div>
+                
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+                
+              </div>
+            <!-- Question No: 02 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium"> 
+                    02. How does Browser works?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 03 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    03. HTTP vs HTTPS?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 04 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    04. Tell me something about JS engine v8 internal mechanism?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 05 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    05. What is re-render in Browser?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 06 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    06. What is event Loop in JavaScript
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 07 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    07. If javaScript is single threaded, how does it handle asynchronouse call?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 08 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    08. What is SSL?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+            </div>
+            <!-- Question No: 09 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    09. Difference between setTimeOut  and setInterval
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 10 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    10. What is Regular Expression?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 11 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    11. What is a heap?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            
+  
+        </section>
+        <!-- 38.0 Common Interview Question -->
+        <section class="m-5">
+            <h2 class="text-lg font-extrabold mb-3">38.0 Common Interview Question</h2>
+            <!-- Question No: 01 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    01. What is the difference between an alert box and confirmation box?
+                </div>
+                
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+                
+              </div>
+            <!-- Question No: 02 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium"> 
+                    02. What ae JavaScript Cookies?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 03 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    03. Difference between local storage and session storage.
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 04 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    04. What should you use? cookie or local storage or session storage?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 05 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    05. Tell me 2 differences between DOM vs BOM.
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            <!-- Question No: 06 -->
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3 mx-5">
+                <div class="collapse-title text-lg font-medium">
+                    06. Can you discuss the types of browser API?
+                </div>
+                <div class="collapse-content"> <hr>
+                    Loading Page ...
+                </div>
+              </div>
+            
+  
+        </section>
+ 
     </main>
-    
 </body>
 </html>
