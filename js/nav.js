@@ -41,14 +41,18 @@ navDiv.innerHTML = `<!-- <nav> -->
                                         <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                                     </svg>
                                 </a>
-                                <ul class="p-2 menu bg-sky-300 w-56">
-                                    <li><a class="hover:bg-sky-400 hover:text-white" href="milestone5.html">Milestone
-                                            5</a></li>
-                                    <li><a class="hover:bg-sky-400 hover:text-white" href="milestone6.html">Milestone
-                                            6</a></li>
-                                    <li><a class="hover:bg-sky-400 hover:text-white" href="milestone7.html">Milestone
-                                            7</a></li>
-                                </ul>
+                                <ul class="p-2 menu bg-sky-300 w-auto">
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone3.html">Milestone 3: CSS Frameworks</a>
+                                </li>
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone4.html">Milestone 4: Hellow JavaScript</a>
+                                </li>
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone5.html">Milestone 5: Integrate javaScript(JavaScript in a Relation)</a>
+                                </li>
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone6.html">Milestone 6: Intermediate JavaScript, API</a>
+                                </li>
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone7.html">Milestone 7: Explore Browser & Debug</a>
+                                </li>
+                            </ul>
                             </li>
                             <li><a>Item 3</a></li>
                         </ul>
@@ -83,12 +87,16 @@ navDiv.innerHTML = `<!-- <nav> -->
                                     <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                                 </svg>
                             </a>
-                            <ul class="p-2 menu bg-sky-300 w-56">
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone5.html">Milestone 5</a>
+                            <ul class="p-2 menu bg-sky-300 w-auto">
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone3.html">Milestone 3: CSS Frameworks</a>
                                 </li>
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone6.html">Milestone 6</a>
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone4.html">Milestone 4: Hellow JavaScript</a>
                                 </li>
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone7.html">Milestone 7</a>
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone5.html">Milestone 5: Integrate javaScript(JavaScript in a Relation)</a>
+                                </li>
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone6.html">Milestone 6: Intermediate JavaScript, API</a>
+                                </li>
+                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone7.html">Milestone 7: Explore Browser & Debug</a>
                                 </li>
                             </ul>
                         </li>
