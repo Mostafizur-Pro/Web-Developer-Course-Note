@@ -74,7 +74,7 @@ navDiv.innerHTML = `<!-- <nav> -->
                             <ul class="p-2 menu bg-sky-300 w-56">
                                 <li><a class="hover:bg-sky-400 hover:text-white" href="loop.html">Loop</a></li>
                                 <li><a class="hover:bg-sky-400 hover:text-white" href="function.html">Function</a></li>
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone7.html">Milestone 7</a>
+                                <li><a class=" hover:bg-sky-400 hover:text-white" href="milestone7.html">Milestone 7</a>
                                 </li>
                             </ul>
                         </li>
@@ -88,15 +88,15 @@ navDiv.innerHTML = `<!-- <nav> -->
                                 </svg>
                             </a>
                             <ul class="p-2 menu bg-sky-300 w-auto">
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone3.html">Milestone 3: CSS Frameworks</a>
+                                <li><a class="collapse hover:bg-sky-400 hover:text-white" href="milestone3.html">Milestone 3: CSS Frameworks</a>
                                 </li>
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone4.html">Milestone 4: Hellow JavaScript</a>
+                                <li><a class="collapse hover:bg-sky-400 hover:text-white" href="milestone4.html">Milestone 4: Hellow JavaScript</a>
                                 </li>
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone5.html">Milestone 5: Integrate javaScript(JavaScript in a Relation)</a>
+                                <li><a class="collapse hover:bg-sky-400 hover:text-white" href="milestone5.html">Milestone 5: Integrate javaScript(JavaScript in a Relation)</a>
                                 </li>
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone6.html">Milestone 6: Intermediate JavaScript, API</a>
+                                <li><a class="collapse hover:bg-sky-400 hover:text-white" href="milestone6.html">Milestone 6: Intermediate JavaScript, API</a>
                                 </li>
-                                <li><a class="hover:bg-sky-400 hover:text-white" href="milestone7.html">Milestone 7: Explore Browser & Debug</a>
+                                <li><a class=" collapse hover:bg-sky-400 hover:text-white" href="milestone7.html">Milestone 7: Explore Browser & Debug</a>
                                 </li>
                             </ul>
                         </li>
